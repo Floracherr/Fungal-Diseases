@@ -65,8 +65,8 @@ plot(log_incidence~av.temp, data= focal.data, col="blue", xlab = "Average Temper
 
 points(focal.data$av.temp[which(focal.data$disease=="IA")],focal.data$log_incidence[which(focal.data$disease=="IA")], col="orange")
 
-hist(focal.data$av.temp[which(focal.data$disease=="IA")],xlab = "Incidence of IA", main = "Histogram of IA Incidence")
-hist(focal.data$av.temp[which(focal.data$disease=="CPA")],xlab = "Incidence of CPA", main = "Histogram of CPA Incidence")
+hist(focal.data$log_incidence[which(focal.data$disease=="IA")],xlab = "Incidence of IA", main = "Histogram of IA Incidence")
+hist(focal.data$log_incidence[which(focal.data$disease=="CPA")],xlab = "Incidence of CPA", main = "Histogram of CPA Incidence")
 
 
 library(nlme)
